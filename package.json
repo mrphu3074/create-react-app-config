@@ -1,0 +1,27 @@
+{
+  "name": "react-scripts-extend",
+  "version": "0.0.1",
+  "description": "Support create-react-app middlewares and override config Edit",
+  "repository": "https://github.com/mrphu3074/react-scripts-config.git",
+  "author": "Phu Nguyen <mrphu3074@gmail.com>",
+  "license": "MIT",
+  "main": "out/index.js",
+  "scripts": {
+    "compile": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0"
+  },
+  "bin": {
+    "react-scripts-extend": "./bin/react-scripts.js"
+  },
+  "dependencies": {
+    "react-scripts": "^0.8.5"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-0"]
+  }
+}
